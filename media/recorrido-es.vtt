@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.000
+Recorrido por BeatBase: se muestra la página de Inicio con el encabezado y el menú de navegación.
+
+00:00:04.000 --> 00:00:09.000
+Sección Artistas: tarjetas de Bad Bunny, The Weeknd y Travis Scott con la propuesta de API en desarrollo.
+
+00:00:09.000 --> 00:00:13.000
+Sección Planes API: comparación entre el Plan Gratuito y el Plan Pro.
+
+00:00:13.000 --> 00:00:18.000
+Formulario de Contacto: se envían campos vacíos o un mensaje muy corto y se muestran los avisos de validación; luego, con datos válidos, se confirma el envío y se limpia el formulario.
