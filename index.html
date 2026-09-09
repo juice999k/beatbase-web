@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatBase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="bg-light">
+    <header id="inicio" class="cabecera text-center py-5 shadow-sm">
+        <h1 class="display-4 fw-bold">🎶 BeatBase</h1>
+        <p class="lead">Prototipo de una plataforma de datos musicales inspirada en Spotify 🎧</p>
+    </header>
+
+    <nav class="menu shadow">
+        <a href="index.html">🏠 Inicio</a>
+        <a href="#artistas">🎤 Artistas</a>
+        <a href="#planes">💳 Planes API</a>
+        <a href="contacto.html">📬 Contacto</a>
+    </nav>
+    
+    <main class="container py-5">
+        
+        <section id="artistas" class="text-center mb-5">
+            <h2 class="mb-4">🌟 Artistas destacados para consulta</h2>
+            
+            <div class="contenedor-flex">
+                <article class="tarjeta shadow-sm">
+                    <h3 class="mb-3">Bad Bunny 🐰</h3>
+                    <img src="img/bad-bunny.jpg" alt="Foto de Bad Bunny" width="250" class="rounded">
+                    <p class="mt-3">Consulta oyentes mensuales, top tracks y lanzamientos más recientes vía endpoint.</p>
+                    <p class="estado-api"><strong>Propuesta de API en desarrollo</strong></p>
+                </article>
+
+                <article class="tarjeta shadow-sm">
+                    <h3 class="mb-3">The Weeknd 🌃</h3>
+                    <img src="img/the-weeknd.jpg" alt="Foto de The Weeknd" width="250" class="rounded">
+                    <p class="mt-3">Accede a métricas de streaming, colaboraciones y discografía completa en formato JSON.</p>
+                    <p class="estado-api"><strong>Propuesta de API en desarrollo</strong></p>
+                </article>
+
+                <article class="tarjeta shadow-sm">
+                    <h3 class="mb-3">Travis Scott 🌵</h3>
+                    <img src="img/travis-scott.webp" alt="Foto de Travis Scott" width="250" class="rounded">
+                    <p class="mt-3">Obtén datos de popularidad, álbumes destacados y pistas recomendadas por el algoritmo.</p>
+                    <p class="estado-api"><strong>Propuesta de API en desarrollo</strong></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="planes" class="text-center mb-5">
+            <h2 class="mb-4">🚀 Planes de la API</h2>
+            
+            <div class="contenedor-flex">
+                <article class="tarjeta shadow-sm border-success">
+                    <h3 class="text-success">Plan Gratuito (Dev) 🛠️</h3>
+                    <p>Hasta 1.000 peticiones mensuales para proyectos personales y pruebas.</p>
+                    <p class="fs-4"><strong>Gratis 🆓</strong></p>
+                    <button id="btnPlanGratis" class="btn btn-outline-success mt-2 fw-bold w-100">Seleccionar Plan</button>
+                </article>
+                
+                <article class="tarjeta shadow-sm border-primary">
+                    <h3 class="text-primary">Plan Pro 💎</h3>
+                    <p>Peticiones ilimitadas por segundo, acceso a endpoints en tiempo real y soporte técnico.</p>
+                    <p class="fs-4"><strong>$9.990 / mes 💳</strong></p>
+                    <button id="btnPlanPro" class="btn btn-primary mt-2 fw-bold w-100">Obtener Pro</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="demostracion" class="text-center mb-5">
+            <h2 class="mb-3">Recorrido de BeatBase</h2>
+            <p>Video sin audio con un recorrido por Inicio, Planes y las validaciones de Contacto.</p>
+            <video controls preload="metadata" class="w-100 rounded" style="max-width: 960px;" aria-label="Demostración de navegación y validación de BeatBase">
+                <source src="media/recorrido-beatbase.mp4" type="video/mp4">
+                <track kind="captions" src="media/recorrido-es.vtt" srclang="es" label="Español" default>
+                Tu navegador no admite video HTML. Puedes descargarlo con el enlace siguiente.
+            </video>
+            <p><a href="media/recorrido-beatbase.mp4" download>Descargar el recorrido</a></p>
+            <details class="text-start mx-auto" style="max-width: 960px;">
+                <summary>Descripción del recorrido</summary>
+                <p>Se muestran las tarjetas de artistas y los planes propuestos. En Contacto, el formulario rechaza campos vacíos y un mensaje breve. Al completar los datos válidos, confirma la validación, aclara que no envía ni guarda datos y limpia los campos.</p>
+            </details>
+        </section>
+
+        <section class="text-center bg-white p-4 rounded shadow-sm mx-auto" style="max-width: 600px;">
+            <h2 class="mb-3">¿Necesitas ayuda? 🤝</h2>
+            <p class="mb-4">Si tienes dudas sobre la integración o buscas una API key personalizada, escríbenos un mensaje.</p>
+            <a href="contacto.html" class="btn btn-success btn-lg fw-bold">Ir al Formulario de Contacto 📬</a>
+        </section>
+        
+    </main>
+
+    <footer class="pie-pagina text-center py-4">
+        <p class="m-0">BeatBase - Plataforma de datos y API para Spotify 🎵</p>
+    </footer>
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>
